@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 enum ObjectType
 {
+    empty,
     enemy,
     player,
     npc,
@@ -17,8 +18,8 @@ enum ObjectType
 
 internal class GameObject
 {
-    ObjectType Type;
-    Position Position;
+    public ObjectType Type {  get; set; }
+    public Position Position { get; set; }
 
     public GameObject(ObjectType type, Position position) 
     { 

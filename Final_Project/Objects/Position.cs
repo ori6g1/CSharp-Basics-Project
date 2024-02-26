@@ -6,18 +6,19 @@ using System.Threading.Tasks;
 
 internal class Position
 {
-    public int x, y;
+    public int X { get; set; } 
+    public int Y { get; set; }
 
     public Position(int x, int y)
     {
-        this.x = x;
-        this.y = y;
+        X = x;
+        Y = y;
     }
 
     public void ChangePosition(Position newPosition)
     {
-        this.x = newPosition.x;
-        this.y = newPosition.y;
+        X = newPosition.X;
+        Y = newPosition.Y;
     }
 }
 
